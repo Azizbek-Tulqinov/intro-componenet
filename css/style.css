@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/img/bac_img.svg);
+  background-size: 100%;
+  background-repeat: repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0px 10px;
+}
+
+.wrapper {
+  max-width: 1110px;
+  width: 100%;
+  height: 558px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+.wrapper .info {
+  max-width: 525px;
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .info h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.wrapper .info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: #fff;
+}
+.wrapper .register {
+  max-width: 540px;
+  width: 100%;
+  height: 558px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .register .discount {
+  border-radius: 10px;
+  max-width: 540px;
+  width: 100%;
+  height: 60px;
+  -webkit-box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  background: #5e54a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .register .discount p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 173%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.wrapper .register .sign-up {
+  padding: 40px;
+  display: grid;
+  gap: 16px;
+  border-radius: 10px;
+  max-width: 540px;
+  width: 100%;
+  height: 474px;
+  -webkit-box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+.wrapper .register .sign-up p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 236%;
+  text-align: center;
+  color: #bab7d4;
+}
+.wrapper .register .sign-up p span {
+  font-weight: 700;
+  color: #ff7979;
+}
+.wrapper .register .sign-up form {
+  display: grid;
+  gap: 10px;
+}
+.wrapper .register .sign-up form label {
+  display: none;
+  position: relative;
+}
+.wrapper .register .sign-up form label img {
+  position: absolute;
+  right: 24px;
+  top: -50px;
+}
+.wrapper .register .sign-up form label p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: right;
+  color: #ff7979;
+  position: absolute;
+  top: -10px;
+  right: 1px;
+}
+.wrapper .register .sign-up form input:focus + label {
+  display: block;
+}
+.wrapper .register .sign-up form input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  max-width: 460px;
+  width: 100%;
+  height: 56px;
+  outline: none;
+  padding: 15px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #3d3b48;
+  opacity: 0.75;
+}
+.wrapper .register .sign-up form input:focus {
+  border: 1px solid #ff7979;
+}
+.wrapper .register .sign-up form button {
+  border-radius: 5px;
+  max-width: 460px;
+  width: 100%;
+  height: 56px;
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+          box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+  background: #38cc8b;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 173%;
+  letter-spacing: 0.07em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.wrapper .register .sign-up form button:hover {
+  background: #77e2b3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 68px 24px;
+    height: 1000px;
+  }
+  .wrapper {
+    max-width: 375px;
+    height: 844px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper .info {
+    max-width: 327px;
+    height: 226px;
+  }
+  .wrapper .info h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+  }
+  .wrapper .info p {
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+  }
+  .wrapper .register {
+    max-width: 327px;
+    height: 554px;
+  }
+  .wrapper .register .discount {
+    max-width: 327px;
+    height: 88px;
+  }
+  .wrapper .register .discount p {
+    max-width: 194px;
+    text-align: center;
+  }
+  .wrapper .register .sign-up {
+    max-width: 327px;
+    height: 442px;
+    padding: 24px;
+  }
+  .wrapper .register .sign-up p {
+    margin: 0 auto;
+    max-width: 249px;
+    line-height: 191%;
+  }
+  .wrapper .register .sign-up form input {
+    padding: 15px 20px;
+    max-width: 279px;
+    height: 56px;
+  }
+  .wrapper .register .sign-up form button {
+    max-width: 279px;
+    height: 56px;
+  }
+}
