@@ -70,17 +70,14 @@ body {
 .wrapper .register {
   max-width: 540px;
   width: 100%;
-  height: 558px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 24px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .wrapper .register .discount {
   border-radius: 10px;
@@ -115,7 +112,6 @@ body {
   border-radius: 10px;
   max-width: 540px;
   width: 100%;
-  height: 474px;
   -webkit-box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
   background: #fff;
@@ -135,27 +131,14 @@ body {
   display: grid;
   gap: 10px;
 }
-.wrapper .register .sign-up form label {
-  display: none;
+.wrapper .register .sign-up form span {
   position: relative;
-}
-.wrapper .register .sign-up form label img {
-  position: absolute;
-  right: 24px;
-  top: -50px;
-}
-.wrapper .register .sign-up form label p {
+  top: -6px;
   font-style: italic;
   font-weight: 500;
   font-size: 11px;
   text-align: right;
   color: #ff7979;
-  position: absolute;
-  top: -10px;
-  right: 1px;
-}
-.wrapper .register .sign-up form input:focus + label {
-  display: block;
 }
 .wrapper .register .sign-up form input {
   border: 1px solid #dedede;
@@ -170,12 +153,46 @@ body {
   line-height: 186%;
   letter-spacing: 0.02em;
   color: #3d3b48;
+}
+.wrapper .register .sign-up form input::-webkit-input-placeholder {
   opacity: 0.75;
 }
-.wrapper .register .sign-up form input:focus {
-  border: 1px solid #ff7979;
+.wrapper .register .sign-up form input::-moz-placeholder {
+  opacity: 0.75;
 }
-.wrapper .register .sign-up form button {
+.wrapper .register .sign-up form input:-ms-input-placeholder {
+  opacity: 0.75;
+}
+.wrapper .register .sign-up form input::-ms-input-placeholder {
+  opacity: 0.75;
+}
+.wrapper .register .sign-up form input::placeholder {
+  opacity: 0.75;
+}
+.wrapper .register .sign-up form .error {
+  border: 1px solid #ff7979;
+  color: #ff7979;
+  background: url(/img/caution.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+.wrapper .register .sign-up form .direct {
+  border: 2px solid rgb(107, 155, 13);
+  color: #3d3b48;
+  background: none;
+}
+.wrapper .register .sign-up form .eye {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: translateY(-56px);
+      -ms-transform: translateY(-56px);
+          transform: translateY(-56px);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.wrapper .register .sign-up form .claeim {
   border-radius: 5px;
   max-width: 460px;
   width: 100%;
@@ -191,13 +208,13 @@ body {
   border: none;
   cursor: pointer;
 }
-.wrapper .register .sign-up form button:hover {
+.wrapper .register .sign-up form .claeim:hover {
   background: #77e2b3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
     padding: 68px 24px;
     height: 1000px;
@@ -230,7 +247,6 @@ body {
   }
   .wrapper .register {
     max-width: 327px;
-    height: 554px;
   }
   .wrapper .register .discount {
     max-width: 327px;
@@ -242,7 +258,6 @@ body {
   }
   .wrapper .register .sign-up {
     max-width: 327px;
-    height: 442px;
     padding: 24px;
   }
   .wrapper .register .sign-up p {
