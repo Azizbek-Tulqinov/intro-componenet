@@ -6,7 +6,7 @@ function valedataError(element, text) {
   element.nextElementSibling.innerHTML = text;
 }
 function valedataTrue(element) {
-  element.classList.add("direct");
+  element.classList.remove("error");
   element.nextElementSibling.innerHTML = "";
 }
 
@@ -52,7 +52,9 @@ form.addEventListener("submit", (e) => {
     password: formData[3].value,
   };
   let newData = formDataValue.every((item) => item);
-  console.log(newData ? userData : {});
+  newData
+    ? (console.log(userData), formData.forEach((item) => (item.value = "")))
+    : {};
 });
 
 // let password = document.querySelector("#password"),

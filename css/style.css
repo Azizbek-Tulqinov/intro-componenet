@@ -176,11 +176,6 @@ body {
   background-repeat: no-repeat;
   background-position: 95%;
 }
-.wrapper .register .sign-up form .direct {
-  border: 2px solid rgb(107, 155, 13);
-  color: #3d3b48;
-  background: none;
-}
 .wrapper .register .sign-up form .eye {
   margin-left: 5px;
   width: 10px;
